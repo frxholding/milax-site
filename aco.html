@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Aços - MILAX</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+/* TOPO */
+.topo {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* BOTÃO VOLTAR */
+.voltar {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* GRID */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.produto {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGEM */
+.produto img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+/* LINK */
+.card-link {
+  position: relative;
+  display: block;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(227,6,19,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.overlay span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-link:hover .overlay {
+  opacity: 1;
+}
+
+/* TITULO */
+.titulo-produto {
+  margin-top: 15px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topo">
+  Aços
+</div>
+
+<!-- BOTÃO VOLTAR -->
+<a href="index.html" class="voltar">⬅ Voltar</a>
+
+<div class="produtos">
+
+  <!-- PRODUTO 1 -->
+  <div class="produto">
+    <a href="CATÁLOGOS/aco.pdf" target="_blank" class="card-link">
+      <img src="imagens/aco.png">
+      <div class="overlay"><span>Ver Catálogo</span></div>
+    </a>
+    <p class="titulo-produto">Aço</p>
+  </div>
+
+  <!-- PRODUTO 2 -->
+  <div class="produto">
+    <a href="CATÁLOGOS/aco2.pdf" target="_blank" class="card-link">
+      <img src="imagens/aco2.png">
+      <div class="overlay"><span>Ver Catálogo</span></div>
+    </a>
+    <p class="titulo-produto">Estantes / Bibliotecas</p>
+  </div>
+
+  <!-- PRODUTO 3 -->
+  <div class="produto">
+    <a href="CATÁLOGOS/aco3.pdf" target="_blank" class="card-link">
+      <img src="imagens/aco3.png">
+      <div class="overlay"><span>Ver Catálogo</span></div>
+    </a>
+    <p class="titulo-produto">Linha Lockers</p>
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

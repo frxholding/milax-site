@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+max-width: 900px;
+    margin: 0 auto;
+}
+
+.produto img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+}
+</style>
+<meta charset="UTF-8">
+<title>Cadeiras - MILAX</title>
+
+<style>
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+/* TOPO */
+.topo {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  padding: 40px;
+}
+
+/* GRID */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+justify-content: center;
+}
+
+/* CARD */
+.produto {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGEM */
+.produto img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+/* LINK */
+.card-link {
+  position: relative;
+  display: block;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(227,6,19,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.overlay span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-link:hover .overlay {
+  opacity: 1;
+}
+
+/* TITULO */
+.titulo-produto {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topo">
+  Cadeiras Corporativas
+</div>
+
+<div class="produtos">
+
+    <!-- B-UP -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-bup.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-bup.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira B-UP</p>
+    </div>
+
+    <!-- ECO -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-eco.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-eco.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira ECO</p>
+    </div>
+
+    <!-- ELITE -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-elite2.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-elite2.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira ELITE</p>
+    </div>
+
+    <!-- HOME -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-home.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-home.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira HOME</p>
+    </div>
+
+    <!-- MULTI -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-multi.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-multi.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira MULTI</p>
+    </div>
+
+    <!-- SHIFT -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-shift.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-shift.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira SHIFT</p>
+    </div>
+
+    <!-- T-LOUNGE -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-tlooung.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-tloug.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira T-LOUNGE</p>
+    </div>
+
+    <!-- COMPONENT -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeita-componet.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-componet.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira COMPONENT</p>
+    </div>
+
+    <!-- B-SIDE -->
+    <div class="produto">
+        <a href="CATÁLOGOS/cadeira-bside.pdf" target="_blank" class="card-link">
+            <img src="imagens/cadeira-bside.png">
+            <div class="overlay"><span>Ver Catálogo</span></div>
+        </a>
+        <p class="titulo-produto">Cadeira B-SIDE Mesh</p>
+    </div>
+
+</div>
+    <!-- PRODUTO 2 -->
+    
+
+</div>
+
+</body>
+</html>
