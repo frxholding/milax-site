@@ -202,6 +202,38 @@ body {
 .footer-col a:hover {
   color: #e30613;
 }
+	.cursos {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f5f6f8;
+}
+
+.grid-cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card-curso {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card-curso:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card-curso .icone {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
 </style>
 </head>
 
